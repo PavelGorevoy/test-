@@ -1,0 +1,48 @@
+.first__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: $light-green;
+  counter-reset: block;
+  margin: 15px 15px;
+
+  span::after {
+    @include fonts;
+    counter-increment: block;
+    content: counter(block);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 53px;
+    line-height: 62px;
+    color: $basic-white;
+  }
+
+  :nth-child(1) {
+    flex-basis: 390px;
+  }
+
+  :nth-child(2) {
+    flex-basis: 590px;
+  }
+
+  :nth-child(3) {
+    flex-basis: 160px;
+  }
+
+  :nth-child(4) {
+    flex-basis: 995px;
+  }
+
+  :nth-child(5) {
+    flex-basis: 160px;
+  }
+}
+
+.first__item {
+  display: block;
+  position: relative;
+  background: $green;
+  height: 198px;
+  flex: 1 1 150px;
+}

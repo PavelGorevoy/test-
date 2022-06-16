@@ -1,0 +1,16 @@
+.second__section {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  padding: 30px;
+  margin: 0 15px;
+  background: $background-block;
+
+  span {
+    display: block;
+    border-radius: 5px;
+    background: #22ffc0;
+    height: 199px;
+    background: $blue;
+  }
+}
